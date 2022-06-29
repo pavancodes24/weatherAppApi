@@ -1,14 +1,18 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-
-const DisplayWeatherData = () => {
+import styles from './Weather.module.css'
+const DisplayWeatherData = ({ show }) => {
     const { data } = useSelector(state => state)
     return (
-        
+
         <div>
-            <h1>Location: {data?.name}</h1>
-            <h1>Temperature: {data?.main?.temp}</h1>
+            {show && <>
+                <h1>Location: {data?.name}</h1>
+                <h1>Temperature: {Math.floor(data?.main?.temp)}  <img className={styles.cel} src='/celsius-degrees-symbol-of-temperature.png' height='40' width='40' alt="" /> </h1>
+               
+            </>}
         </div>
+
     )
 }
 

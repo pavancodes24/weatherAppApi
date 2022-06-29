@@ -1,0 +1,42 @@
+.inp{
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    border: solid 1.5px #D3D3D3;
+    width: 40vw;
+    height: 7vh;
+    border-radius: .7vh;
+    font-size: 20px;
+    padding-left: 2.7vw;
+}
+
+.inp:hover{
+    border: 2px solid skyblue; 
+}
+textarea:focus,input:focus {
+    outline: skyblue;
+    border: 2px solid skyblue
+
+  }
+
+
+
+.location{
+   position: relative;
+   display: inline-block;
+   left: 32px;
+   top: 6px;
+   font-size: 36px;
+}
+.search{
+    position: relative;
+    display: inline-block;
+    top: 4px;
+    right: 43px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.cel{
+    margin-top: 55px;
+    padding-left: 5px;
+}
+

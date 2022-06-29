@@ -8,9 +8,11 @@ import {
 export const getWeatherData = (city) => async (dispatch) => {
   try {
     dispatch({ type: GET_WEATHER_REQUEST });
-    const {data} = await axios.get(
+    const output = await axios.get(
       `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=0351df5a5b7959119c0e2a21e5eb7862`
     );
+    console.log(output)
+    const {data} = output
     dispatch({ type: GET_WEATHER_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: GET_WEATHER_FAILURE, payload: error.message });
