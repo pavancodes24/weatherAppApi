@@ -1,4 +1,5 @@
 import {
+  CLEAR_ERRORS,
   GET_WEATHER_FAILURE,
   GET_WEATHER_REQUEST,
   GET_WEATHER_SUCCESS,
@@ -27,6 +28,10 @@ export const reducer = (state = weatherData, { type, payload }) => {
         ...state,
         isError: true,
         isLoading: false,
+      };
+    case CLEAR_ERRORS:
+      return {
+        isError: false,
       };
     default:
       return state;
