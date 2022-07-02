@@ -25,7 +25,7 @@ export const WeatherSearch = () => {
     useEffect(() => {
         dispatch(getWeatherData('warangal'))
         dispatch({ type: CLEAR_ERRORS })
-    }, [dispatch, isError,show])
+    }, [dispatch])
     return (
         <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
             <div >

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import BarChart from './BarChart'
 import styles from './Weather.module.css'
 const DisplayWeatherData = () => {
-    const { data, isLoading, isError } = useSelector(state => state)
+    const { data, isLoading } = useSelector(state => state)
 
     let id = data?.weather
     if (id) {
