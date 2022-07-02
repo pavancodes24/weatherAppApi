@@ -23,6 +23,7 @@ const DisplayWeatherData = () => {
                             <div><img src={`http://openweathermap.org/img/wn/${id}@2x.png`} alt="" /></div>
 
                         </div>
+
                         <div>
                             <BarChart />
                         </div>
@@ -35,6 +36,22 @@ const DisplayWeatherData = () => {
                                 <div>Humidity</div>
                                 <div>{data.main.humidity}{'%'}</div>
                             </div>
+
+                        </div>
+                        <br />
+                        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '50px', margin: "0 20px 0 20px" }}>
+                            <div >
+                                <div>Sunrise</div>
+                                <div>5:45am</div>
+                            </div>
+                            <div >
+                                <div>Sunset</div>
+                                <div>6:45pm</div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/KX3jkQp/sunriseandset.png" alt="sunriseandset" />
                         </div>
 
 

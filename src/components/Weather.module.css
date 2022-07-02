@@ -42,7 +42,7 @@ textarea:focus,input:focus {
     border: solid 1.5px #D3D3D3;
     padding: 13px;
     width: 42.5vw;
-    height: 97vh;
+    height: 107vh;
     border-radius: .7vh;
     margin-left: -14px;
 }
@@ -58,4 +58,25 @@ textarea:focus,input:focus {
     font-size: 19px;
     background-color: #F5FAFF;
     border-radius: 4px;
+}
+
+
+
+.weeklyData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    border: solid 1.5px #D3D3D3;
+    border-radius: 6px;
+    padding-left: 8px;
+}
+.weeklyData >div:hover{
+    border: 2px solid red; 
+    width: 100px;
+}
+.day > img{
+    width: 70px;
+    height: 70px
 }

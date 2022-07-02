@@ -4,6 +4,7 @@ import { getWeatherData } from '../redux/action';
 import { CLEAR_ERRORS } from '../redux/actionType';
 import DisplayWeatherData from './DisplayWeatherData';
 import styles from './Weather.module.css'
+import WeeklyChart from './WeeklyChart';
 
 export const WeatherSearch = () => {
     const dispatch = useDispatch();
@@ -36,9 +37,17 @@ export const WeatherSearch = () => {
                     value={query} />
                 <span className={styles.search} onClick={handleSearch}><i className="fa fa-search"></i></span>
             </div>
+            {show && isError ? <div>something went wrong</div> : <div className={styles.weeklyData}>
+                <WeeklyChart temp={24} day={'Mon'} links={'http://openweathermap.org/img/wn/03d@2x.png'}/>
+                <WeeklyChart temp={25} day={'Tue'} links={'http://openweathermap.org/img/wn/04d@2x.png'}/>
+                <WeeklyChart temp={26} day={'Wed'} links={'http://openweathermap.org/img/wn/02d@2x.png'}/>
+                <WeeklyChart temp={27} day={'Thu'} links={'http://openweathermap.org/img/wn/10d@2x.png'}/>
+                <WeeklyChart temp={28} day={'Fri'} links={'http://openweathermap.org/img/wn/01d@2x.png'}/>
+                <WeeklyChart temp={29} day={'sat'} links={'http://openweathermap.org/img/wn/01d@2x.png'}/>
+            </div>}
             {show && isError ? <div>something went wrong</div> : <DisplayWeatherData />}
-           
-            
+
+
         </div>
     )
 }
