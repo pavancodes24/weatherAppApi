@@ -13,7 +13,7 @@ const DisplayWeatherData = () => {
 
     return isLoading ?
         <div>...loading</div>
-        : isError ? <div>something went wrong</div> : (
+        : (
             <div>
                 {id &&
                     <div className={styles.secondBox}>
