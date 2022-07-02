@@ -1,13 +1,15 @@
-import "./App.css";
-import WeatherSearch from "./components/WeatherSearch";
+import React from 'react'
 
-function App() {
+import BarChart from './components/BarChart'
+import './App.css'
+import WeatherSearch from './components/WeatherSearch'
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Weather Api search</h1>
+    <div>
       <WeatherSearch />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

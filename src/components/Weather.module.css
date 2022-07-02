@@ -1,11 +1,12 @@
 .inp{
     box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    
     border: solid 1.5px #D3D3D3;
     width: 40vw;
     height: 7vh;
     border-radius: .7vh;
     font-size: 20px;
-    padding-left: 2.7vw;
+    padding-left: 4.3vw;
 }
 
 .inp:hover{
@@ -35,4 +36,26 @@ textarea:focus,input:focus {
     cursor: pointer;
 }
 
+.secondBox{
+   
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    border: solid 1.5px #D3D3D3;
+    padding: 13px;
+    width: 42.5vw;
+    height: 97vh;
+    border-radius: .7vh;
+    margin-left: -14px;
+}
 
+.pressure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 20px;
+    width: 300px;
+    height: 70px;
+    font-size: 19px;
+    background-color: #F5FAFF;
+    border-radius: 4px;
+}
