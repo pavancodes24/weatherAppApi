@@ -25,7 +25,7 @@ export const WeatherSearch = () => {
     useEffect(() => {
         dispatch(getWeatherData('warangal'))
         dispatch({ type: CLEAR_ERRORS })
-    }, [dispatch, isError])
+    }, [dispatch, isError,show])
     return (
         <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
             <div >
@@ -45,7 +45,7 @@ export const WeatherSearch = () => {
                 <WeeklyChart temp={28} day={'Fri'} links={'http://openweathermap.org/img/wn/01d@2x.png'}/>
                 <WeeklyChart temp={29} day={'sat'} links={'http://openweathermap.org/img/wn/01d@2x.png'}/>
             </div>}
-            {show && isError ? <div>something went wrong</div> : <DisplayWeatherData />}
+            {show && isError && <DisplayWeatherData />}
 
 
         </div>
