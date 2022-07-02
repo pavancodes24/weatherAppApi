@@ -20,7 +20,7 @@ const DisplayWeatherData = () => {
                         {/* <h1>Location: {data?.name}</h1> */}
                         <div style={{ display: 'flex', paddingLeft: '20px' }}>
                             <h1 style={{ fontSize: "50px", marginTop: "19px" }}>{Math.floor(data?.main?.temp)}<span>&#xb0;</span>{'C'}</h1>
-                            <div><img src={`http://openweathermap.org/img/wn/${id}@2x.png`} alt="" /></div>
+                            <div><img src={`https://openweathermap.org/img/wn/${id}@2x.png`} alt="" /></div>
 
                         </div>
 
