@@ -45,7 +45,7 @@ export const WeatherSearch = () => {
                 <WeeklyChart temp={28} day={'Fri'} links={'http://openweathermap.org/img/wn/01d@2x.png'}/>
                 <WeeklyChart temp={29} day={'sat'} links={'http://openweathermap.org/img/wn/01d@2x.png'}/>
             </div>}
-            {show && isError && <DisplayWeatherData />}
+            {<DisplayWeatherData />}
 
 
         </div>
