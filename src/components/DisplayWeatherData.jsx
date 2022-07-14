@@ -21,7 +21,7 @@ const DisplayWeatherData = () => {
     },[isLoading])
 
     const getdataofUser = async(lat,lon)=>{
-        var {data} = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts&units=metric&appid=0351df5a5b7959119c0e2a21e5eb7862`);
+        var {data} = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts&units=metric&appid=045875faf6500e2b08e352de604e5d85`);
         setOneData(data)
     }
 

@@ -4,7 +4,7 @@ import { getWeatherData } from '../redux/action';
 import { CLEAR_ERRORS } from '../redux/actionType';
 import DisplayWeatherData from './DisplayWeatherData';
 import styles from './Weather.module.css'
-import WeeklyChart from './WeeklyChart';
+import { WeeklyTotal } from './WeeklyTotal';
 
 export const WeatherSearch = () => {
     const dispatch = useDispatch();
@@ -34,14 +34,7 @@ export const WeatherSearch = () => {
                     value={query} />
                 <span className={styles.search} onClick={handleSearch}><i className="fa fa-search"></i></span>
             </div>
-            { <div className={styles.weeklyData}>
-                <WeeklyChart temp={24} day={'Mon'} links={'https://openweathermap.org/img/wn/03d@2x.png'}/>
-                <WeeklyChart temp={25} day={'Tue'} links={'https://openweathermap.org/img/wn/04d@2x.png'}/>
-                <WeeklyChart temp={26} day={'Wed'} links={'https://openweathermap.org/img/wn/02d@2x.png'}/>
-                <WeeklyChart temp={27} day={'Thu'} links={'https://openweathermap.org/img/wn/10d@2x.png'}/>
-                <WeeklyChart temp={28} day={'Fri'} links={'https://openweathermap.org/img/wn/01d@2x.png'}/>
-                <WeeklyChart temp={29} day={'sat'} links={'https://openweathermap.org/img/wn/01d@2x.png'}/>
-            </div>}
+            <WeeklyTotal/>
             
             {<DisplayWeatherData  />}
 
