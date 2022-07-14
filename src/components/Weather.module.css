@@ -42,7 +42,7 @@ textarea:focus,input:focus {
     border: solid 1.5px #D3D3D3;
     padding: 13px;
     width: 42.5vw;
-    height: 107vh;
+    min-height: 117vh;
     border-radius: .7vh;
     margin-left: -14px;
 }
@@ -61,7 +61,6 @@ textarea:focus,input:focus {
 }
 
 
-
 .weeklyData{
     display: flex;
     flex-direction: row;
@@ -73,10 +72,13 @@ textarea:focus,input:focus {
     padding-left: 8px;
 }
 .weeklyData >div:hover{
-    border: 2px solid red; 
+    border: 5px solid skyblue; 
     width: 100px;
+    display: flex;
+    justify-content: center;
 }
 .day > img{
     width: 70px;
     height: 70px
 }
+

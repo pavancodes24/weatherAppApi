@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import BarChart from './BarChart'
+import { LineChart } from './LineChart'
 import styles from './Weather.module.css'
 const DisplayWeatherData = () => {
     const { data, isLoading } = useSelector(state => state)
@@ -25,7 +25,7 @@ const DisplayWeatherData = () => {
                         </div>
 
                         <div>
-                            <BarChart />
+                            <LineChart/>
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '50px', margin: "0 20px 0 20px" }}>
                             <div className={styles.pressure}>
