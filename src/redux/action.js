@@ -11,7 +11,6 @@ export const getWeatherData = (city) => async (dispatch) => {
     const output = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=0351df5a5b7959119c0e2a21e5eb7862`
     );
-    console.log(output)
     const {data} = output
     dispatch({ type: GET_WEATHER_SUCCESS, payload: data });
   } catch (error) {

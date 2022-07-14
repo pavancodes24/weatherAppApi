@@ -1,17 +1,28 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import Chart from "react-apexcharts";
 
-export const LineChart=()=>{
+export const LineChart=({data})=>{
+    var today = new Date();
+    var todayHour = today.getHours();
+    var dailyHours =[];
+    for(var i= todayHour; i<=todayHour+12;i++){
+      dailyHours.push(i)
+    }
+    var dailyHoursData= [];
+    for(var j=todayHour;j<todayHour+12;j++){
+      dailyHoursData.push(Math.round(data[j].temp))
+    }
     const series = [
         {
-          name: "Guests",
-          data: [19, 22, 20, 26]
+          name: "temp",
+          data: dailyHoursData
         }
       ];
       const options = {
         xaxis: {
-          categories: ["2019-05-01", "2019-05-02", "2019-05-03", "2019-05-04"]
-        }
-      };
-      return <Chart type="line" series={series} options={options} />;
+          categories: dailyHours
+        },
+        dataLabels:{enabled: false}
+      };     
+      return <Chart type="area" series={series} options={options}   />;
 }

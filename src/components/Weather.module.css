@@ -42,7 +42,7 @@ textarea:focus,input:focus {
     border: solid 1.5px #D3D3D3;
     padding: 13px;
     width: 42.5vw;
-    min-height: 117vh;
+    height: 127vh;
     border-radius: .7vh;
     margin-left: -14px;
 }

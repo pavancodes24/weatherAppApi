@@ -9,11 +9,8 @@ import WeeklyChart from './WeeklyChart';
 export const WeatherSearch = () => {
     const dispatch = useDispatch();
     const [query, setQuery] = useState("warangal");
-    const [show, setShow] = useState(false)
-    const { isError } = useSelector(state => state)
     const handleSearch = () => {
         dispatch(getWeatherData(query))
-        setShow(true)
         setQuery(query)
     }
     const handleKeyDown = (event) => {
@@ -45,7 +42,8 @@ export const WeatherSearch = () => {
                 <WeeklyChart temp={28} day={'Fri'} links={'https://openweathermap.org/img/wn/01d@2x.png'}/>
                 <WeeklyChart temp={29} day={'sat'} links={'https://openweathermap.org/img/wn/01d@2x.png'}/>
             </div>}
-            {<DisplayWeatherData />}
+            
+            {<DisplayWeatherData  />}
 
 
         </div>
