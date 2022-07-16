@@ -2,7 +2,7 @@
     box-shadow: 0 0 5pt 0.5pt #D3D3D3;
     
     border: solid 1.5px #D3D3D3;
-    width: 40vw;
+    width: 50vw;
     height: 7vh;
     border-radius: .7vh;
     font-size: 20px;
@@ -41,8 +41,8 @@ textarea:focus,input:focus {
     box-shadow: 0 0 5pt 0.5pt #D3D3D3;
     border: solid 1.5px #D3D3D3;
     padding: 13px;
-    width: 42.5vw;
-    height: 127vh;
+    width: 52.5vw;
+    height: 137vh;
     border-radius: .7vh;
     margin-left: -14px;
 }
@@ -62,7 +62,7 @@ textarea:focus,input:focus {
 
 
 .weeklyData{
-    width: 42.5vw;
+    width: 52.5vw;
     display: flex;
     overflow: scroll;
     flex-direction: row;
@@ -82,5 +82,11 @@ textarea:focus,input:focus {
 .day > img{
     width: 70px;
     height: 70px
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 

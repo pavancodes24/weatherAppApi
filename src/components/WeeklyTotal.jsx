@@ -26,15 +26,14 @@ export const WeeklyTotal=()=>{
     ot = arr.slice(day,day+8);
     return  <div>
             {wData && <div className={styles.weeklyData}>
-                <WeeklyChart temp={Math.floor(wData.daily[0].temp.max)} temp2={Math.floor(wData.daily[0].temp.min)} day={ot[0]} links={`https://openweathermap.org/img/wn/${wData.daily[0].weather[0].icon}@2x.png`}/>
-                <WeeklyChart temp={Math.floor(wData.daily[1].temp.max)} temp2={Math.floor(wData.daily[1].temp.min)} day={ot[1]} links={`https://openweathermap.org/img/wn/${wData.daily[1].weather[0].icon}@2x.png`}/>
-                <WeeklyChart temp={Math.floor(wData.daily[2].temp.max)} temp2={Math.floor(wData.daily[2].temp.min)} day={ot[2]} links={`https://openweathermap.org/img/wn/${wData.daily[2].weather[0].icon}@2x.png`}/>
-                <WeeklyChart temp={Math.floor(wData.daily[3].temp.max)} temp2={Math.floor(wData.daily[3].temp.min)} day={ot[3]} links={`https://openweathermap.org/img/wn/${wData.daily[3].weather[0].icon}@2x.png`}/>
-                <WeeklyChart temp={Math.floor(wData.daily[4].temp.max)} temp2={Math.floor(wData.daily[4].temp.min)} day={ot[4]} links={`https://openweathermap.org/img/wn/${wData.daily[4].weather[0].icon}@2x.png`}/>
-                <WeeklyChart temp={Math.floor(wData.daily[5].temp.max)} temp2={Math.floor(wData.daily[5].temp.min)} day={ot[5]} links={`https://openweathermap.org/img/wn/${wData.daily[5].weather[0].icon}@2x.png`}/>
-                <WeeklyChart temp={Math.floor(wData.daily[6].temp.max)} temp2={Math.floor(wData.daily[6].temp.min)} day={ot[6]} links={`https://openweathermap.org/img/wn/${wData.daily[6].weather[0].icon}@2x.png`}/>
-                <WeeklyChart temp={Math.floor(wData.daily[7].temp.max)} temp2={Math.floor(wData.daily[7].temp.min)} day={ot[7]} links={`https://openweathermap.org/img/wn/${wData.daily[7].weather[0].icon}@2x.png`}/>
-
+                <WeeklyChart temp={Math.floor(wData.daily[0].temp.max)} temp2={Math.floor(wData.daily[0].temp.min)} day={ot[0]} links={`https://openweathermap.org/img/wn/${wData.daily[0].weather[0].icon}@2x.png`} desc={wData.daily[0].weather[0].main}/>
+                <WeeklyChart temp={Math.floor(wData.daily[1].temp.max)} temp2={Math.floor(wData.daily[1].temp.min)} day={ot[1]} links={`https://openweathermap.org/img/wn/${wData.daily[1].weather[0].icon}@2x.png`} desc={wData.daily[1].weather[0].main}/>
+                <WeeklyChart temp={Math.floor(wData.daily[2].temp.max)} temp2={Math.floor(wData.daily[2].temp.min)} day={ot[2]} links={`https://openweathermap.org/img/wn/${wData.daily[2].weather[0].icon}@2x.png`} desc={wData.daily[2].weather[0].main}/>
+                <WeeklyChart temp={Math.floor(wData.daily[3].temp.max)} temp2={Math.floor(wData.daily[3].temp.min)} day={ot[3]} links={`https://openweathermap.org/img/wn/${wData.daily[3].weather[0].icon}@2x.png`} desc={wData.daily[3].weather[0].main}/>
+                <WeeklyChart temp={Math.floor(wData.daily[4].temp.max)} temp2={Math.floor(wData.daily[4].temp.min)} day={ot[4]} links={`https://openweathermap.org/img/wn/${wData.daily[4].weather[0].icon}@2x.png`} desc={wData.daily[4].weather[0].main}/>
+                <WeeklyChart temp={Math.floor(wData.daily[5].temp.max)} temp2={Math.floor(wData.daily[5].temp.min)} day={ot[5]} links={`https://openweathermap.org/img/wn/${wData.daily[5].weather[0].icon}@2x.png`} desc={wData.daily[5].weather[0].main}/>
+                <WeeklyChart temp={Math.floor(wData.daily[6].temp.max)} temp2={Math.floor(wData.daily[6].temp.min)} day={ot[6]} links={`https://openweathermap.org/img/wn/${wData.daily[6].weather[0].icon}@2x.png`} desc={wData.daily[6].weather[0].main}/>
+                <WeeklyChart temp={Math.floor(wData.daily[7].temp.max)} temp2={Math.floor(wData.daily[7].temp.min)} day={ot[7]} links={`https://openweathermap.org/img/wn/${wData.daily[7].weather[0].icon}@2x.png`} desc={wData.daily[7].weather[0].main}/>
             </div>}
     </div>
 }

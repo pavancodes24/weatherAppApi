@@ -36,10 +36,7 @@ const DisplayWeatherData = () => {
                         <div style={{ display: 'flex', paddingLeft: '20px' }}>
                             <h1 style={{ fontSize: "50px", marginTop: "19px" }}>{Math.floor(data?.main?.temp)}<span>&#xb0;</span>{'C'}</h1>
                             <div><img src={`https://openweathermap.org/img/wn/${id}@2x.png`} alt="" /></div>
-
                         </div>
-                        
-
                         <div>
                             <LineChart data={oneData.hourly}/>
                         </div>
@@ -52,7 +49,6 @@ const DisplayWeatherData = () => {
                                 <div>Humidity</div>
                                 <div>{data.main.humidity}{'%'}</div>
                             </div>
-
                         </div>
                         <br />
                         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '50px', margin: "0 20px 0 20px" }}>
@@ -60,22 +56,16 @@ const DisplayWeatherData = () => {
                                 <div>Sunrise</div>
                                 <div>{new Date(Number(data.sys.sunrise)*1000).toLocaleTimeString()}</div>
                             </div>
-                            <div >
+                            <div>
                                 <div>Sunset</div>
                                 <div>{new Date(Number(data.sys.sunset)*1000).toLocaleTimeString()}</div>
                             </div>
-
                         </div>
-                        <div >
-                            <img style={{maxWidth:"100%"}} src="https://i.ibb.co/KX3jkQp/sunriseandset.png" alt="sunriseandset" />
+                        <div style={{marginLeft:"20px"}}>
+                            <img style={{Width:"100%"}} src="https://i.ibb.co/KX3jkQp/sunriseandset.png"  alt="sunriseandset" />
                         </div>
-
-
                     </div>
-
-
                 }
-
             </div>
         )
 }
