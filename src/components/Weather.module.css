@@ -46,6 +46,9 @@ textarea:focus,input:focus {
     border-radius: .7vh;
     margin-left: -14px;
 }
+.showsearches{
+    margin-left: 20px
+}
 
 .pressure{
     display: flex;

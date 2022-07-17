@@ -5,7 +5,6 @@ import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { LineChart } from './LineChart'
 import styles from './Weather.module.css'
-import WeeklyChart from './WeeklyChart'
 const DisplayWeatherData = () => {
     const { data, isLoading } = useSelector(state => state)
     const [oneData,setOneData] = useState();
